@@ -8,6 +8,7 @@ import { apiNotFoundPlugin } from './api-not-found.js';
 import { standaloneVoiceTools } from './voiceTools.js';
 import { unwatchedRuntimeDirsPlugin } from './unwatched-cache.js';
 
+import { fireweave } from '@fireweaveai/web-sdk/vite';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 
 /** Load this checkout's configuration and attach its local provider middleware. */
@@ -23,6 +24,7 @@ export default defineConfig(({ command, mode }) => {
       localMcpPlugin(),
       apiNotFoundPlugin(),
       unwatchedRuntimeDirsPlugin(),
+      fireweave(),
     ],
     googleApiKey: process.env.GOOGLE_MAPS_API_KEY,
     cesiumToken: process.env.CESIUM_ION_TOKEN,
