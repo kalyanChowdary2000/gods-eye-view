@@ -1,0 +1,31 @@
+{
+  "defaultEnvironment": "production",
+  "orgId": "EfJePncMeGxVl8rFh9tfHqkdEZhMM4yL",
+  "projectId": "b97c7126-fe86-42b8-809a-374e2721ac3d",
+  "projectName": "gods-eye-view",
+  "rolloutReady": {
+    "attestUrl": "https://dorine-incorporative-nonopinionatively.ngrok-free.dev"
+  },
+  "server": {
+    "url": "https://dorine-incorporative-nonopinionatively.ngrok-free.dev"
+  },
+  "surfaces": [
+    {
+      "entrypoint": "src/main.js",
+      "harnessKind": "package",
+      "metricsClient": "none",
+      "path": ".",
+      "rolloutCredentialEnv": "FIREWEAVE_BROWSER_KEY",
+      "startProfile": "client",
+      "surface": "web",
+      "surfaceId": "sfc_01M63FXKK5WE4Y20CK3QGSMJAX",
+      "trackerPath": ".fireweave/stamps.ts",
+      "sdk": {
+        "name": "@fireweaveai/web-sdk",
+        "version": "3.0.0-dev.20261028123334.248ef24",
+        "channel": "dev"
+      }
+    }
+  ],
+  "version": 2
+}
